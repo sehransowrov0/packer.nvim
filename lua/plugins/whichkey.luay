@@ -1,0 +1,16 @@
+local ok, which_key = pcall(require, "which-key")
+if not ok then
+  return
+end
+
+which_key.setup({
+  win = {
+    border = "rounded",
+    no_overlap = true,
+  },
+  icons = {
+    breadcrumb = "»", -- symbol shown in the command line area
+    separator = "➜",  -- symbol used between a key and its label
+    group = "+",      -- symbol prepended to a group
+  },
+})

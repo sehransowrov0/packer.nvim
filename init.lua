@@ -9,6 +9,7 @@ vim.cmd [[packadd packer.nvim]]
 
 -- plugins
 require("packer").startup(function(use)
+  use "folke/which-key.nvim"
   use "echasnovski/mini.icons"
   use "wbthomason/packer.nvim"
   use "windwp/nvim-autopairs"
@@ -70,6 +71,7 @@ require("plugins.autopairs")
 -- require("plugins.barbar")
 require("plugins.noice")
 require("plugins.mini_icons")
+require("plugins.whichkey")
 
 
 
