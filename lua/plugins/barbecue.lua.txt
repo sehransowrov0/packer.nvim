@@ -1,0 +1,6 @@
+require("barbecue").setup({
+  theme = "auto",
+  show_dirname = true,
+  show_basename = true,
+})
+
