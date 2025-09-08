@@ -1,12 +1,3 @@
--- leader key
-vim.g.mapleader = " "
-
--- disable default vim tabline
-vim.opt.showtabline = 0
-
--- load packer
-vim.cmd [[packadd packer.nvim]]
-
 -- plugins
 require("packer").startup(function(use)
   use "folke/which-key.nvim"
@@ -55,12 +46,16 @@ end
   use "saadparwaiz1/cmp_luasnip"
 end)
 
+require("plugins.bufferline")
+require("plugins.nvimtree")
+require("plugins.fzf")
+require("plugins.sonokai")
+-- require("plugins.lualine")
+require("plugins.lsp")
+require("plugins.cmp")
+require("plugins.autopairs")
+require("plugins.noice")
+-- require("plugins.mini_icons")
+-- require("plugins.whichkey")
 
--- load plugin configs
-require("plugins.plugins")
-
-
--- load configs
-require("config.options")
-require("config.keymaps")
 
